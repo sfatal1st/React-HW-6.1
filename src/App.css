@@ -1,0 +1,89 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* styles.css */
+
+.clock {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border: 2px solid #000;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.hour-hand,
+.minute-hand,
+.second-hand {
+  position: absolute;
+  background-color: #000;
+  transform-origin: bottom center;
+}
+
+.hour-hand {
+  width: 8px;
+  height: 60px;
+  top: 20%;
+  left: 96px;
+}
+
+.minute-hand {
+  width: 4px;
+  height: 90px;
+  top: 5%;
+  left: 98px;
+}
+
+.second-hand {
+  width: 2px;
+  height: 100px;
+  top: 0%;
+  left: 99px;
+}
+
+.clock-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.clock-name {
+  transform: translateY(-60px);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.clock-time {
+  font-size: 14px;
+}
+
+.remove-button {
+  margin-top: 5px;
+  transform: translate(100px, -60px);
+  border: 1px solid #000;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #000;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-clock-form {
+  margin-bottom: 10px;
+}
+
+.add-clock-form input {
+  margin-right: 5px;
+}
+
+.clocks-container {
+  display: flex;
+  flex-wrap: wrap;
+  transform: translateY(60px);
+}
